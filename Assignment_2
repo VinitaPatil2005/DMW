@@ -1,0 +1,377 @@
+# Assignment No. 2: Perform Data Preprocessing Tasks and Demonstrate Association Rule Mining on Datasets
+
+# Title
+Data Preprocessing and Association Rule Mining using WEKA
+
+---
+
+# Aim
+To perform data preprocessing tasks and demonstrate association rule mining on datasets using WEKA.
+
+---
+
+# Objective
+- To understand data preprocessing techniques.
+- To clean and transform dataset using WEKA.
+- To perform association rule mining using Apriori algorithm.
+- To generate association rules from dataset.
+
+---
+
+# Theory
+
+## 1. Data Preprocessing
+
+Data preprocessing is the process of preparing raw data before applying data mining algorithms.
+
+Real-world data may contain:
+- Missing values
+- Noise
+- Duplicate data
+- Inconsistent values
+
+Preprocessing improves:
+- Accuracy
+- Quality of results
+- Performance of algorithms
+
+---
+
+# Types of Data Preprocessing
+
+## 1. Data Cleaning
+Removes:
+- Missing values
+- Duplicate values
+- Noise
+
+## 2. Data Integration
+Combines data from multiple sources.
+
+## 3. Data Transformation
+Converts data into suitable format.
+
+Examples:
+- Normalization
+- Aggregation
+
+## 4. Data Reduction
+Reduces size of dataset while maintaining important information.
+
+## 5. Data Discretization
+Converts continuous values into intervals.
+
+---
+
+# 2. Association Rule Mining
+
+Association Rule Mining is a technique used to discover relationships between items in a dataset.
+
+It is mainly used in:
+- Market basket analysis
+- Product recommendation
+- Sales analysis
+
+---
+
+# Important Terms
+
+## 1. Support
+
+Support measures frequency of occurrence of itemset in dataset.
+
+### Formula
+
+```math
+Support(A → B) =
+(Transactions containing A ∪ B) / (Total Transactions)
+```
+
+---
+
+## 2. Confidence
+
+Confidence measures reliability of rule.
+
+### Formula
+
+```math
+Confidence(A → B) =
+(Transactions containing A ∪ B) /
+(Transactions containing A)
+```
+
+---
+
+## 3. Lift
+
+Lift measures strength of association.
+
+### Formula
+
+```math
+Lift(A → B) =
+Confidence(A → B) / Support(B)
+```
+
+---
+
+# Apriori Algorithm
+
+The Apriori Algorithm is used to generate frequent itemsets and association rules.
+
+It works on the principle:
+
+> "If an itemset is frequent, then all of its subsets must also be frequent."
+
+---
+
+# Working of Apriori Algorithm
+
+Steps:
+1. Generate candidate itemsets
+2. Calculate support
+3. Remove infrequent itemsets
+4. Generate frequent itemsets
+5. Generate association rules
+
+---
+
+# Detailed Step-by-Step Procedure
+
+# Part A: Start WEKA
+
+## Step 1: Open WEKA
+
+1. Click Start Menu.
+2. Search for WEKA.
+3. Open WEKA application.
+4. WEKA GUI Chooser window appears.
+
+---
+
+# Part B: Data Preprocessing
+
+## Step 2: Open Explorer
+
+1. Click on Explorer.
+2. Explorer window opens.
+
+---
+
+## Step 3: Load Dataset
+
+1. Click Open File.
+2. Select dataset file.
+
+Example:
+
+```text
+weather.nominal.arff
+```
+
+3. Click Open.
+
+Dataset information appears:
+- Attributes
+- Number of instances
+- Attribute types
+
+---
+
+## Step 4: Observe Dataset
+
+Check:
+- Missing values
+- Attribute names
+- Data types
+- Distinct values
+
+---
+
+## Step 5: Remove Unwanted Attribute
+
+1. Select attribute from left panel.
+2. Click Remove.
+
+Selected attribute gets deleted.
+
+---
+
+## Step 6: Apply Filters
+
+Filters are used for preprocessing.
+
+### To Apply Filter
+
+1. Under Filter section click Choose.
+2. Select filter.
+
+Example:
+
+```text
+unsupervised → attribute → Remove
+```
+
+3. Click Apply.
+
+---
+
+## Step 7: Replace Missing Values
+
+1. Click Choose under Filter.
+2. Select:
+
+```text
+unsupervised → attribute → ReplaceMissingValues
+```
+
+3. Click Apply.
+
+Missing values are automatically replaced.
+
+---
+
+## Step 8: Normalize Dataset
+
+Normalization scales data values.
+
+### Steps
+
+1. Choose filter:
+
+```text
+unsupervised → attribute → Normalize
+```
+
+2. Click Apply.
+
+---
+
+## Step 9: Save Preprocessed Dataset
+
+1. Click Save.
+2. Enter file name.
+3. Save dataset.
+
+Example:
+
+```text
+processed_weather.arff
+```
+
+---
+
+# Part C: Association Rule Mining
+
+## Step 10: Open Associate Tab
+
+1. Click Associate tab.
+2. Association rule mining window opens.
+
+---
+
+## Step 11: Select Apriori Algorithm
+
+1. Click Choose.
+2. Select:
+
+```text
+rules → Apriori
+```
+
+Apriori algorithm gets selected.
+
+---
+
+## Step 12: Set Parameters
+
+Double-click Apriori to change parameters.
+
+| Parameter | Meaning |
+|---|---|
+| minMetric | Minimum confidence |
+| lowerBoundMinSupport | Minimum support |
+| numRules | Number of rules |
+
+Example:
+- Support = 0.1
+- Confidence = 0.9
+
+---
+
+## Step 13: Start Association Rule Mining
+
+1. Click Start button.
+2. WEKA begins processing dataset.
+
+---
+
+## Step 14: Observe Generated Rules
+
+Output window displays:
+- Frequent itemsets
+- Association rules
+- Support values
+- Confidence values
+
+Example Rule:
+
+```text
+outlook=sunny → play=no
+```
+
+Meaning:
+If outlook is sunny, then play is likely to be no.
+
+---
+
+## Step 15: Analyze Results
+
+Observe:
+- Best rules
+- Confidence values
+- Support percentages
+- Rule accuracy
+
+---
+
+# Result
+
+- Successfully performed data preprocessing tasks.
+- Successfully applied filters and normalization.
+- Successfully generated association rules using Apriori algorithm in WEKA.
+
+---
+
+# Conclusion
+
+Thus, data preprocessing operations such as cleaning, normalization, and missing value replacement were successfully performed. Association Rule Mining was also implemented using Apriori algorithm to generate meaningful relationships between dataset attributes.
+
+---
+
+# Viva Questions
+
+## 1. What is data preprocessing?
+It is the process of cleaning and transforming raw data before analysis.
+
+## 2. Why is preprocessing important?
+It improves data quality and algorithm accuracy.
+
+## 3. What is Association Rule Mining?
+It is a technique used to discover relationships among items in datasets.
+
+## 4. What is Apriori Algorithm?
+Apriori is an algorithm used to generate frequent itemsets and association rules.
+
+## 5. Define Support.
+Support measures frequency of occurrence of an itemset.
+
+## 6. Define Confidence.
+Confidence measures reliability of association rule.
+
+## 7. What are filters in WEKA?
+Filters are tools used for preprocessing datasets.
+
+## 8. What is normalization?
+Normalization scales data values into a specific range.
