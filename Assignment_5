@@ -1,0 +1,325 @@
+# Assignment No. 5: Demonstrate Performing Regression on Datasets
+
+# Title
+Regression Analysis using WEKA
+
+---
+
+# Aim
+To perform regression analysis on datasets using WEKA.
+
+---
+
+# Objective
+- To understand regression in data mining.
+- To study regression algorithms.
+- To perform regression analysis using WEKA.
+- To analyze prediction results.
+
+---
+
+# Theory
+
+# Regression
+
+Regression is a supervised learning technique used to predict continuous numerical values.
+
+It identifies relationships between dependent and independent variables.
+
+Regression is mainly used for:
+- Price prediction
+- Sales forecasting
+- Weather prediction
+- Stock market analysis
+
+---
+
+# Types of Regression
+
+1. Linear Regression
+2. Multiple Regression
+3. Polynomial Regression
+
+---
+
+# Linear Regression
+
+Linear Regression establishes a linear relationship between variables.
+
+It predicts output using a straight-line equation.
+
+## Formula
+
+```math
+y = mx + c
+```
+
+Where:
+- `y` = Predicted value
+- `m` = Slope
+- `x` = Input variable
+- `c` = Intercept
+
+---
+
+# Working of Regression
+
+1. Load dataset.
+2. Select regression algorithm.
+3. Train model using dataset.
+4. Predict continuous values.
+5. Evaluate model performance.
+
+---
+
+# Advantages of Regression
+
+- Simple and easy to implement
+- Predicts continuous values
+- Useful for forecasting
+- Fast execution
+
+---
+
+# Disadvantages of Regression
+
+- Sensitive to outliers
+- Assumes linear relationship
+- Less accurate for complex datasets
+
+---
+
+# Applications of Regression
+
+- House price prediction
+- Weather forecasting
+- Sales prediction
+- Stock market prediction
+- Demand forecasting
+
+---
+
+# Software Requirement
+
+- WEKA Tool
+
+---
+
+# Dataset Used
+
+Example Dataset:
+```text
+cpu.arff
+```
+
+Other regression datasets can also be used.
+
+---
+
+# Detailed Step-by-Step Procedure
+
+# Part A: Open WEKA
+
+## Step 1: Start WEKA
+
+1. Click Start Menu.
+2. Search for WEKA.
+3. Open WEKA application.
+4. WEKA GUI Chooser window appears.
+
+---
+
+# Part B: Load Dataset
+
+## Step 2: Open Explorer
+
+1. Click on Explorer.
+2. Explorer window opens.
+
+---
+
+## Step 3: Load Dataset
+
+1. Click Open File.
+2. Select regression dataset.
+
+Example:
+
+```text
+cpu.arff
+```
+
+3. Click Open.
+
+Dataset information appears:
+- Attributes
+- Number of instances
+- Attribute types
+
+---
+
+## Step 4: Observe Dataset
+
+Check:
+- Numeric attributes
+- Target variable
+- Missing values
+
+Regression datasets mostly contain numeric values.
+
+---
+
+# Part C: Perform Regression
+
+## Step 5: Open Classify Tab
+
+1. Click Classify tab.
+2. Classification/Regression panel opens.
+
+---
+
+## Step 6: Select Regression Algorithm
+
+1. Click Choose button.
+2. Select:
+
+```text
+functions → LinearRegression
+```
+
+3. Linear Regression algorithm gets selected.
+
+---
+
+# Step 7: Select Test Option
+
+Available options:
+- Use training set
+- Supplied test set
+- Cross-validation
+- Percentage split
+
+### Select:
+
+```text
+10-fold cross-validation
+```
+
+This improves evaluation accuracy.
+
+---
+
+# Step 8: Start Regression Process
+
+1. Click Start button.
+2. WEKA begins processing dataset.
+
+---
+
+# Step 9: Observe Output
+
+Output window displays:
+- Correlation coefficient
+- Mean absolute error
+- Root mean squared error
+- Regression equation
+
+Example Output:
+
+```text
+Correlation coefficient = 0.92
+Mean absolute error = 15.4
+```
+
+---
+
+# Step 10: Analyze Regression Model
+
+Observe:
+- Prediction accuracy
+- Error values
+- Regression equation
+
+Lower error indicates better model performance.
+
+---
+
+# Regression Graph
+
+Example Linear Regression Graph:
+
+```text
+        y
+        |
+        |          *
+        |       *
+        |    *
+        | *
+        |________________ x
+```
+
+Straight line represents prediction relationship between variables.
+
+---
+
+# Result
+
+- Successfully loaded dataset in WEKA.
+- Successfully applied Linear Regression algorithm.
+- Successfully analyzed prediction results and error values.
+
+---
+
+# Conclusion
+
+Thus, regression analysis was successfully performed using WEKA. Linear Regression algorithm predicted continuous numerical values and generated regression statistics with good accuracy.
+
+---
+
+# Viva Questions
+
+## 1. What is regression?
+Regression is a supervised learning technique used to predict continuous values.
+
+---
+
+## 2. What is Linear Regression?
+Linear Regression predicts output using a linear relationship between variables.
+
+---
+
+## 3. Write the equation of Linear Regression.
+
+```math
+y = mx + c
+```
+
+---
+
+## 4. What are applications of regression?
+- Price prediction
+- Sales forecasting
+- Weather prediction
+
+---
+
+## 5. What is supervised learning?
+Supervised learning uses labeled data for training and prediction.
+
+---
+
+## 6. What is correlation coefficient?
+It measures strength of relationship between variables.
+
+---
+
+## 7. What is Mean Absolute Error?
+It measures average prediction error.
+
+---
+
+## 8. Which WEKA algorithm is used for regression?
+
+```text
+functions → LinearRegression
+```
