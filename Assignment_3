@@ -1,0 +1,302 @@
+# Assignment No. 3: Demonstration of Classification Rule Process on WEKA Dataset using Naive Bayes Algorithm
+
+# Title
+Classification using Naive Bayes Algorithm in WEKA
+
+---
+
+# Aim
+To demonstrate the classification rule process on WEKA dataset using Naive Bayes algorithm.
+
+---
+
+# Objective
+- To understand classification in data mining.
+- To study the Naive Bayes algorithm.
+- To perform classification using WEKA.
+- To analyze classification results.
+
+---
+
+# Theory
+
+## Classification
+
+Classification is a supervised learning technique used to predict categorical class labels.
+
+It is used to:
+- Predict outcomes
+- Categorize data
+- Make decisions based on training data
+
+Examples:
+- Spam email detection
+- Disease prediction
+- Student result prediction
+
+---
+
+# Naive Bayes Algorithm
+
+Naive Bayes is a probabilistic classification algorithm based on Bayes Theorem.
+
+It assumes that all attributes are independent of each other.
+
+The algorithm is:
+- Simple
+- Fast
+- Efficient for large datasets
+
+---
+
+# Bayes Theorem
+
+## Formula
+
+```math
+P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}
+```
+
+Where:
+
+- `P(A|B)` = Posterior Probability
+- `P(B|A)` = Likelihood Probability
+- `P(A)` = Prior Probability
+- `P(B)` = Evidence Probability
+
+---
+
+# Working of Naive Bayes Algorithm
+
+1. Load training dataset.
+2. Calculate probabilities for each class.
+3. Apply Bayes theorem.
+4. Predict class with highest probability.
+5. Generate classification model.
+
+---
+
+# Advantages of Naive Bayes
+
+- Easy to implement
+- Fast execution
+- Works well with large datasets
+- Handles categorical data efficiently
+- Requires less training data
+
+---
+
+# Disadvantages of Naive Bayes
+
+- Assumes attribute independence
+- Less accurate when features are dependent
+- Zero frequency problem may occur
+
+---
+
+# Applications of Naive Bayes
+
+- Email spam filtering
+- Sentiment analysis
+- Medical diagnosis
+- Text classification
+- Recommendation systems
+
+---
+
+# Detailed Step-by-Step Procedure
+
+# Part A: Open WEKA
+
+## Step 1: Start WEKA
+
+1. Click Start Menu.
+2. Search for WEKA.
+3. Open WEKA application.
+4. WEKA GUI Chooser window appears.
+
+---
+
+# Part B: Load Dataset
+
+## Step 2: Open Explorer
+
+1. Click on Explorer.
+2. Explorer window opens.
+
+---
+
+## Step 3: Load Dataset
+
+1. Click Open File.
+2. Select dataset file.
+
+Example:
+
+```text
+weather.nominal.arff
+```
+
+3. Click Open.
+
+Dataset information displayed:
+- Number of attributes
+- Number of instances
+- Attribute types
+
+---
+
+## Step 4: Observe Dataset
+
+Check:
+- Attribute names
+- Data values
+- Class attribute
+- Missing values
+
+---
+
+# Part C: Classification using Naive Bayes
+
+## Step 5: Open Classify Tab
+
+1. Click on Classify tab.
+2. Classification window opens.
+
+---
+
+## Step 6: Select Naive Bayes Algorithm
+
+1. Click Choose button.
+2. Select:
+
+```text
+bayes → NaiveBayes
+```
+
+3. Naive Bayes algorithm gets selected.
+
+---
+
+## Step 7: Select Test Option
+
+Available options:
+- Use training set
+- Supplied test set
+- Cross-validation
+- Percentage split
+
+### Select:
+
+```text
+10-fold cross-validation
+```
+
+Cross-validation improves evaluation accuracy.
+
+---
+
+## Step 8: Start Classification
+
+1. Click Start button.
+2. WEKA processes dataset.
+
+---
+
+## Step 9: Observe Output
+
+Output window displays:
+- Correctly classified instances
+- Incorrectly classified instances
+- Accuracy percentage
+- Kappa statistics
+- Confusion matrix
+
+Example Output:
+
+```text
+Correctly Classified Instances : 92%
+Incorrectly Classified Instances : 8%
+```
+
+---
+
+# Confusion Matrix
+
+A confusion matrix shows actual and predicted class labels.
+
+Example:
+
+| Actual Class | Predicted Yes | Predicted No |
+|---|---|---|
+| Yes | TP | FN |
+| No | FP | TN |
+
+Where:
+- TP = True Positive
+- TN = True Negative
+- FP = False Positive
+- FN = False Negative
+
+---
+
+# Result
+
+- Successfully loaded dataset in WEKA.
+- Successfully applied Naive Bayes classification algorithm.
+- Successfully analyzed classification accuracy and confusion matrix.
+
+---
+
+# Conclusion
+
+Thus, classification was successfully performed on WEKA dataset using Naive Bayes algorithm. The algorithm classified data efficiently and generated prediction results with good accuracy.
+
+---
+
+# Viva Questions
+
+## 1. What is classification?
+Classification is a supervised learning technique used to predict categorical labels.
+
+---
+
+## 2. What is Naive Bayes algorithm?
+Naive Bayes is a probabilistic classification algorithm based on Bayes theorem.
+
+---
+
+## 3. What is Bayes theorem?
+
+```math
+P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}
+```
+
+---
+
+## 4. What is supervised learning?
+Supervised learning uses labeled training data for prediction.
+
+---
+
+## 5. What is confusion matrix?
+A confusion matrix is used to evaluate classification performance.
+
+---
+
+## 6. What are advantages of Naive Bayes?
+- Fast
+- Simple
+- Efficient
+- Requires less training data
+
+---
+
+## 7. What is cross-validation?
+Cross-validation is a technique used to evaluate model performance.
+
+---
+
+## 8. What datasets are supported by WEKA?
+- ARFF
+- CSV
