@@ -1,0 +1,352 @@
+# Assignment No. 4: Implementation of OLAP Operations using MS Excel
+
+# Title
+Implementation of OLAP Operations using MS Excel Pivot Table
+
+---
+
+# Aim
+To implement OLAP operations using MS Excel Pivot Table.
+
+---
+
+# Objective
+- To understand OLAP operations.
+- To perform multidimensional data analysis.
+- To implement Roll-Up, Drill-Down, Slice, Dice, and Pivot operations using MS Excel.
+
+---
+
+# Theory
+
+## OLAP
+
+OLAP stands for Online Analytical Processing.
+
+It is used for:
+- Data analysis
+- Reporting
+- Decision making
+- Multidimensional analysis
+
+OLAP allows users to analyze large data from different perspectives.
+
+---
+
+# OLAP Operations
+
+Main OLAP operations are:
+
+1. Roll-Up
+2. Drill-Down
+3. Slice
+4. Dice
+5. Pivot
+
+---
+
+## 1. Roll-Up
+Roll-Up summarizes data from lower level to higher level.
+
+Example:
+```text
+City → State → Country
+```
+
+---
+
+## 2. Drill-Down
+Drill-Down shows detailed information from summarized data.
+
+Example:
+```text
+Country → State → City
+```
+
+---
+
+## 3. Slice
+Slice selects one dimension from dataset.
+
+Example:
+```text
+Year = 2025
+```
+
+---
+
+## 4. Dice
+Dice selects data using multiple conditions.
+
+Example:
+```text
+Product = Laptop
+Location = Pune
+Year = 2025
+```
+
+---
+
+## 5. Pivot
+Pivot rotates rows and columns for different data views.
+
+---
+
+# Software Requirement
+
+- MS Excel
+
+---
+
+# Dataset Used
+
+Create the following dataset in Excel:
+
+| Product | Location | Year | Sales |
+|---------|----------|------|-------|
+| Laptop  | Pune     | 2025 | 50000 |
+| Mobile  | Mumbai   | 2025 | 30000 |
+| Tablet  | Delhi    | 2024 | 20000 |
+| Laptop  | Mumbai   | 2024 | 45000 |
+| Mobile  | Pune     | 2025 | 35000 |
+
+---
+
+# Detailed Step-by-Step Procedure
+
+# Step 1: Open MS Excel
+
+1. Open Microsoft Excel.
+2. Create a new blank workbook.
+
+---
+
+# Step 2: Enter Dataset
+
+1. Create columns:
+   - Product
+   - Location
+   - Year
+   - Sales
+
+2. Enter sample data.
+
+---
+
+# Step 3: Select Dataset
+
+1. Select complete table including headings.
+
+---
+
+# Step 4: Insert Pivot Table
+
+1. Go to:
+
+```text
+Insert → Pivot Table
+```
+
+2. Select:
+```text
+New Worksheet
+```
+
+3. Click:
+```text
+OK
+```
+
+Pivot Table Fields panel appears.
+
+---
+
+# Step 5: Create Pivot Table
+
+Drag fields as follows:
+
+| Section | Field   |
+|---------|---------|
+| Rows    | Product |
+| Columns | Year    |
+| Values  | Sales   |
+| Filters | Location|
+
+Pivot Table gets created.
+
+---
+
+# Step 6: Perform Roll-Up Operation
+
+## Roll-Up
+
+Roll-Up summarizes detailed data.
+
+### Steps
+
+1. Remove Location field.
+2. Keep:
+   - Year
+   - Sales
+
+Now total sales by year are displayed.
+
+Example:
+
+| Year | Total Sales |
+|------|-------------|
+| 2024 | 65000       |
+| 2025 | 115000      |
+
+This is Roll-Up operation.
+
+---
+
+# Step 7: Perform Drill-Down Operation
+
+## Drill-Down
+
+Drill-Down provides detailed data.
+
+### Steps
+
+1. Double-click any summarized sales value.
+
+OR
+
+2. Add:
+```text
+Location
+```
+below Year in Rows section.
+
+Detailed records appear.
+
+Example:
+```text
+Maharashtra → Pune, Mumbai
+```
+
+This is Drill-Down operation.
+
+---
+
+# Step 8: Perform Slice Operation
+
+## Slice
+
+Slice selects one dimension.
+
+### Steps
+
+1. Use Filters section.
+2. Select:
+```text
+Year = 2025
+```
+
+Only records of 2025 appear.
+
+This is Slice operation.
+
+---
+
+# Step 9: Perform Dice Operation
+
+## Dice
+
+Dice applies multiple filters.
+
+### Steps
+
+Select:
+```text
+Product = Laptop
+Location = Pune
+Year = 2025
+```
+
+Only matching records are displayed.
+
+This is Dice operation.
+
+---
+
+# Step 10: Perform Pivot Operation
+
+## Pivot
+
+Pivot rotates data view.
+
+### Steps
+
+Initially:
+- Rows = Product
+- Columns = Year
+
+Now interchange:
+- Rows = Year
+- Columns = Product
+
+View changes immediately.
+
+This is Pivot operation.
+
+---
+
+# Result
+
+- Successfully created Pivot Table in MS Excel.
+- Successfully implemented Roll-Up operation.
+- Successfully implemented Drill-Down operation.
+- Successfully implemented Slice operation.
+- Successfully implemented Dice operation.
+- Successfully implemented Pivot operation.
+
+---
+
+# Conclusion
+
+Thus, OLAP operations such as Roll-Up, Drill-Down, Slice, Dice, and Pivot were successfully implemented using MS Excel Pivot Table for multidimensional data analysis.
+
+---
+
+# Viva Questions
+
+## 1. What is OLAP?
+OLAP is a technology used for multidimensional data analysis.
+
+---
+
+## 2. What is Roll-Up operation?
+Roll-Up summarizes detailed data into higher level data.
+
+---
+
+## 3. What is Drill-Down?
+Drill-Down provides detailed view of summarized data.
+
+---
+
+## 4. What is Slice operation?
+Slice selects one dimension from dataset.
+
+---
+
+## 5. What is Dice operation?
+Dice applies multiple conditions to filter data.
+
+---
+
+## 6. What is Pivot operation?
+Pivot rotates rows and columns for different data views.
+
+---
+
+## 7. What is Pivot Table?
+Pivot Table is an Excel feature used for summarizing and analyzing data.
+
+---
+
+## 8. Which software is commonly used for OLAP operations?
+MS Excel is commonly used for OLAP operations.
