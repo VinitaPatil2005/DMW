@@ -1,0 +1,414 @@
+# Assignment No. 1: Build Data Warehouse and Explore WEKA
+
+# Title
+Build Data Warehouse and Explore WEKA
+
+---
+
+# Aim
+To study Data Warehouse concepts and explore the WEKA tool for data mining operations.
+
+---
+
+# Objective
+- To understand Data Warehouse architecture.
+- To study ETL process.
+- To explore WEKA interface and features.
+- To perform basic data preprocessing and classification in WEKA.
+
+---
+
+# Theory
+
+# Data Warehouse
+
+A Data Warehouse is a centralized repository used to store integrated data collected from multiple sources for reporting and analysis.
+
+It supports:
+- Decision making
+- Data analysis
+- Reporting
+- Business intelligence
+
+---
+
+# Characteristics of Data Warehouse
+
+## 1. Subject-Oriented
+Data is organized around subjects such as sales, customer, and product.
+
+---
+
+## 2. Integrated
+Data from multiple sources is combined into a single format.
+
+---
+
+## 3. Time-Variant
+Historical data is maintained for long-term analysis.
+
+---
+
+## 4. Non-Volatile
+Data is stable and not frequently modified.
+
+---
+
+# Data Warehouse Architecture
+
+```text
+Data Sources
+      ↓
+ETL Process
+(Extract, Transform, Load)
+      ↓
+Data Warehouse
+      ↓
+Data Mart / OLAP Tools
+      ↓
+Reports and Analysis
+```
+
+---
+
+# ETL Process
+
+## Extract
+Data is collected from various sources.
+
+## Transform
+Data is cleaned and converted into suitable format.
+
+## Load
+Processed data is loaded into Data Warehouse.
+
+---
+
+# WEKA
+
+WEKA stands for:
+
+```text
+Waikato Environment for Knowledge Analysis
+```
+
+WEKA is an open-source machine learning and data mining tool developed by the University of Waikato, New Zealand.
+
+---
+
+# Features of WEKA
+
+- User-friendly GUI
+- Supports machine learning algorithms
+- Data preprocessing
+- Classification
+- Clustering
+- Association rule mining
+- Data visualization
+
+---
+
+# Components of WEKA
+
+1. Explorer
+2. Experimenter
+3. Knowledge Flow
+4. Simple CLI
+
+---
+
+# Software Requirement
+
+- Java
+- WEKA Tool
+
+---
+
+# Detailed Step-by-Step Procedure
+
+# Part A: Install WEKA
+
+## Step 1: Download WEKA
+
+1. Open browser.
+2. Search:
+```text
+WEKA download
+```
+
+3. Download latest WEKA version.
+
+---
+
+## Step 2: Install Java
+
+WEKA requires Java.
+
+Check Java installation using:
+
+```bash
+java -version
+```
+
+If Java is not installed:
+- Download Java
+- Install Java
+
+---
+
+## Step 3: Install WEKA
+
+1. Open downloaded setup file.
+2. Click Next.
+3. Accept license agreement.
+4. Select installation location.
+5. Click Install.
+6. Click Finish.
+
+---
+
+# Part B: Open WEKA
+
+## Step 4: Start WEKA
+
+1. Click Start Menu.
+2. Search for WEKA.
+3. Open WEKA application.
+
+WEKA GUI Chooser window appears.
+
+---
+
+# Part C: Explore WEKA Interface
+
+## Step 5: Observe WEKA GUI
+
+Main options available:
+- Explorer
+- Experimenter
+- Knowledge Flow
+- Simple CLI
+
+---
+
+## Step 6: Open Explorer
+
+1. Click Explorer.
+2. Explorer window opens.
+
+Tabs available:
+- Preprocess
+- Classify
+- Cluster
+- Associate
+- Select Attributes
+- Visualize
+
+---
+
+# Part D: Load Dataset
+
+## Step 7: Open Dataset
+
+1. Click Open File.
+2. Select dataset.
+
+Example:
+
+```text
+iris.arff
+```
+
+3. Click Open.
+
+Dataset information displayed:
+- Number of instances
+- Number of attributes
+- Attribute types
+
+---
+
+## Step 8: Observe Dataset Information
+
+Check:
+- Attributes
+- Data values
+- Missing values
+- Class labels
+
+Example attributes:
+- Sepal length
+- Sepal width
+- Petal length
+- Petal width
+
+---
+
+# Part E: Data Preprocessing
+
+## Step 9: Remove Attribute
+
+1. Select any attribute.
+2. Click Remove button.
+
+Selected attribute gets deleted.
+
+---
+
+## Step 10: Apply Filters
+
+1. Under Filter section click Choose.
+2. Select filter.
+
+Example:
+
+```text
+unsupervised → attribute → Normalize
+```
+
+3. Click Apply.
+
+Dataset values become normalized.
+
+---
+
+## Step 11: Replace Missing Values
+
+1. Choose filter:
+
+```text
+unsupervised → attribute → ReplaceMissingValues
+```
+
+2. Click Apply.
+
+Missing values are replaced automatically.
+
+---
+
+# Part F: Classification using WEKA
+
+## Step 12: Open Classify Tab
+
+1. Click Classify tab.
+2. Classification panel opens.
+
+---
+
+## Step 13: Select Algorithm
+
+1. Click Choose button.
+2. Select:
+
+```text
+trees → J48
+```
+
+3. J48 classifier gets selected.
+
+---
+
+## Step 14: Select Test Option
+
+Choose:
+
+```text
+10-fold cross-validation
+```
+
+---
+
+## Step 15: Start Classification
+
+1. Click Start button.
+2. WEKA begins processing dataset.
+
+---
+
+## Step 16: Observe Output
+
+Output displays:
+- Correctly classified instances
+- Incorrectly classified instances
+- Accuracy
+- Confusion matrix
+
+Example:
+
+```text
+Correctly Classified Instances : 96%
+```
+
+---
+
+# Part G: Visualization
+
+## Step 17: Visualize Data
+
+1. Click Visualize tab.
+2. Scatter plots appear.
+
+Different colors represent different classes.
+
+---
+
+# Result
+
+- Successfully studied Data Warehouse concepts.
+- Successfully explored WEKA tool.
+- Successfully performed preprocessing and classification operations.
+
+---
+
+# Conclusion
+
+Thus, Data Warehouse concepts and ETL process were successfully studied. WEKA tool was explored for performing preprocessing, classification, and visualization tasks.
+
+---
+
+# Viva Questions
+
+## 1. What is Data Warehouse?
+A Data Warehouse is a centralized repository used for storing integrated data.
+
+---
+
+## 2. What are characteristics of Data Warehouse?
+- Subject-Oriented
+- Integrated
+- Time-Variant
+- Non-Volatile
+
+---
+
+## 3. What is ETL?
+ETL stands for Extract, Transform, and Load.
+
+---
+
+## 4. What is WEKA?
+WEKA is an open-source machine learning and data mining tool.
+
+---
+
+## 5. What is ARFF?
+ARFF stands for Attribute Relation File Format.
+
+---
+
+## 6. What are components of WEKA?
+- Explorer
+- Experimenter
+- Knowledge Flow
+- Simple CLI
+
+---
+
+## 7. What is J48?
+J48 is a Decision Tree classification algorithm in WEKA.
+
+---
+
+## 8. Which datasets are supported by WEKA?
+- ARFF
+- CSV
